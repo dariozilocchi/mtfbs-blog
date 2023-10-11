@@ -1,0 +1,35 @@
+.box {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    /*justify-content: space-between;*/
+    align-items: center;
+    width: 15em;
+    height: 10em;
+    padding: 1em;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+}
+
+.box img {
+    object-fit: cover;
+}
+
+.box span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 1.2;
+    max-height: 3.6em;
+    padding: 0.5em 1em;
+    color: #333;
+    background-color: hsl(0 0% 100% / 0.8);
+}
+
+.active {
+    border-color: red;
+}
