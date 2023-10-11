@@ -30,6 +30,7 @@ async function getPosts(skeleton: boolean): Promise<SkeletonPost[]> {
       publishedAt
     }`);
 
+    // New comment
     return posts.map((post) => ({
         key: post.key,
         post
